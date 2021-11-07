@@ -8,7 +8,58 @@
     <title>Ledger E-Commerce Take Home</title>
   </head>
   <body>
-    <h1>Welcome to your dev environmet!</h1>
+    <header>
+      <div class="pick-up-news">
+        Beware of phishing attacks, Ledger will never ask for the 24 words of
+        your recovery phrase. Never share them. <a>Learn more <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <nav>
+        <a href="/" title="Ledger" class="logo">
+          <img src="img/ledger_icon.svg" />
+        </a>
+        <ul id="menu-list">
+          <li class="has-children">Products</li>
+          <li class="has-children">App and services</li>
+          <li class="has-children">Learn</li>
+          <li class="has-children">Crypto Assets</li>
+          <li class="has-children">For Business</li>
+          <li>Support</li>
+        </ul>
+        <div class="menu-actions">
+          <div class="shopping-cart">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <div class="burger-menu" id="burger-menu">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="cards" id="products-cards-container">
+        <article class="card">
+          <div class="card-img">
+            <img src="https://picsum.photos/seed/picsum/300/200" />
+          </div>
+          <div class="card-body">
+            <div class="card-title">Title</div>
+            <div class="card-contend">C'est super</div>
+            <div class="card-links">
+              <div class="card-link">oui</div>
+              <div class="card-link">non</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer>
+        <div class="pagination">
+          <span class="pagination-number "><</span>
+          <span class="pagination-number pagination-number_current">1</span>
+          <span class="pagination-number">2</span>
+          <span class="pagination-number">></span>
+        </div>
+    </footer>
   </body>
   <script src="js/main.js"></script>
 </html>

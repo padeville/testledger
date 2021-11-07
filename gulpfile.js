@@ -27,7 +27,16 @@ gulp.task("jscript", function () {
     .pipe(gulp.dest("dist/js"));
 });
 
+gulp.task('icons', function() {
+  console.log("hello from ICOOONS");
+
+  return gulp.src('node_modules/@fortawesome/fontawesome-free/webfonts/*')
+      .pipe(gulp.dest('dist/webfonts/'));
+});
+
 gulp.task("serve", function () {
+  gulp.series("icons");
+  console.log('start')
   browserSync.init({
     server: "dist",
     port: 4019,
@@ -45,7 +54,7 @@ gulp.task("watch", function (done) {
   done();
 });
 
-gulp.task("dev-server", gulp.parallel("serve", "watch"));
+gulp.task("dev-server", gulp.parallel("serve", "watch", "icons"));
 
 gulp.task("hello", function (done) {
   console.log("hello from gulp");
