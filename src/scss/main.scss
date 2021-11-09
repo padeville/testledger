@@ -75,6 +75,7 @@ header {
       font-weight: 700;
       line-height: 1.5;
       flex: 2;
+      cursor: pointer;
 
       box-sizing: border-box;
       display: flex;
@@ -87,7 +88,6 @@ header {
         list-style: none;
       }
       li.has-children {
-        cursor: pointer;
         display: inline-block;
         &:after {
           margin-left: 5px;
@@ -187,7 +187,8 @@ footer {
     justify-content: center;
     cursor: pointer;
 
-    &-number {
+    &-number,
+    &-link {
       margin: 0 5px;
       font-size: 1.2rem;
       
@@ -197,4 +198,8 @@ footer {
       }
     }
   }
+}
+
+.opacity {
+  opacity: 0.5;
 }

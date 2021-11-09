@@ -6841,6 +6841,7 @@ header {
       font-weight: 700;
       line-height: 1.5;
       flex: 2;
+      cursor: pointer;
       box-sizing: border-box;
       display: flex;
       justify-content: space-around;
@@ -6850,7 +6851,6 @@ header {
       header nav ul li {
         list-style: none; }
       header nav ul li.has-children {
-        cursor: pointer;
         display: inline-block; }
         header nav ul li.has-children:after {
           margin-left: 5px;
@@ -6922,8 +6922,11 @@ footer {
     display: flex;
     justify-content: center;
     cursor: pointer; }
-    footer .pagination-number {
+    footer .pagination-number, footer .pagination-link {
       margin: 0 5px;
       font-size: 1.2rem; }
-      footer .pagination-number_current, footer .pagination-number:hover {
+      footer .pagination-number_current, footer .pagination-number:hover, footer .pagination-link_current, footer .pagination-link:hover {
         color: #6ed8c6; }
+
+.opacity {
+  opacity: 0.5; }
